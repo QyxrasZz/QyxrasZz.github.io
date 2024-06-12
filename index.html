@@ -37,25 +37,6 @@
         </div>
         <!-- Spinner End -->
 
-<html>
-
-<head>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Menggunakan Mode Desktop</title>
-</head>
-<body>
-  <script>
-    // Mendeteksi apakah pengguna sedang menggunakan mode mobile atau tidak
-    if (window.matchMedia("(max-width: 768px)").matches) {
-      // Jika pengguna sedang menggunakan mode mobile, maka kita akan memaksa mereka untuk menyalakan mode desktop
-      alert("Tolong aktifkan mode desktop untuk melihat konten ini dengan baik.");
-      // Anda dapat menambahkan kode lain di sini untuk mengarahkan pengguna ke mode desktop
-    }
-  </script>
-</body>
-</html>
-
         <!-- Navbar start -->
         <div class="container-fluid fixed-top">
             <div class="container topbar bg-primary d-none d-lg-block">
@@ -98,533 +79,93 @@
         <!-- Navbar End -->
 
 
-
-        <!-- Hero Start -->
-                    
-        <div class="container-fluid py-5 mb-5 hero-header">
-            <div class="container py-5">
-                <div class="row g-5 align-items-center">
-                    <div class="col-md-12 col-lg-7 mx-auto">
-                        <h1 class="display-4 text-primary text-center">Selamat Datang di Toko Subur Sembako</h1>
-                        <p class="text-center">Pusat perbelanjaan kebutuhan sehari-hari yang menawarkan berbagai macam produk. Kami menyediakan beragam pilihan makanan, minuman, kosmetik, serta produk kebersihan dan kebutuhan lainnya untuk memenuhi segala keperluan Anda.</p>
-                        <h4 class="mb-3 text-secondary text-center">&emsp;100% Pelayanan Terbaik Untuk Anda</h4>
-                        <h2 class="mb-3 text-primary text-center">&emsp; lengkap hemat dan berkualitas.</h2>
-                                                 <div class="position-relative mx-auto">
-
-                                    <form action="send-whatsapp.php" method="post">
-
-                                    <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="text" placeholder="Message For This Shop" name="message">
-                                    <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Send</button>
-                        </div>
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="col-md-12 col-lg-5 mx-auto">
-                        <h1 class="display-4 text-center">Apa Yang Kami Jual?</h1>
-                        <p class="text-center"><mark> Kami Menjual Berbagai Banyak Product, Dari Snack, Rokok, Kosmetik, Sereal Perlengkapan mandi seperti sabun, sampo, sikat gigi
-                            Perlengkapan mencuci seperti deterjen, sabun cuci piring, spons Dan lainnya Agar Bisa Memenuhi Kebutuhan Kalian Semua Dengan Harga Yang Terjangkau Dan Kualitas Yang Paling Terbaik</mark></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-                    <div class="col-md-12 col-lg-5">
-                        
-                            </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Hero End -->
+        <!-- Modal Search End -->
 
-        <!-- banner -->
-
-        <div class="banner">
-            <img src="img/headertoko.jpg" alt="Banner Image" class="banner-img" style="width: 100%; height: 600px; object-fit: cover;">
-          </div>
-<p>
-&nbsp;
-&nbsp;
-&nbsp;
-</p>
-       <!-- banner End -->
-
-
-        <!-- Featurs Section Start -->
-        <h1 class="display-4"><center>Fasilitas Yang Kami Sediakan</center></h1>
-        <div class="container-fluid featurs py-5">
-            <div class="container py-5">
-                <div class="row g-4">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="featurs-item text-center rounded bg-light p-4">
-                            <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
-                                <i class="fas fa-car-side fa-3x text-white"></i>
-                            </div>
-                            <div class="featurs-content text-center">
-                                <h5>Gratis Ongkir</h5>
-                                <p class="mb-0">Gratis ongkir dengan minimum Belanja Dan Ketentuan Berlaku</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="featurs-item text-center rounded bg-light p-4">
-                            <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
-                                <i class="fas fa-user-shield fa-3x text-white"></i>
-                            </div>
-                            <div class="featurs-content text-center">
-                                <h5>Kenyamanan Terjaga</h5>
-                                <p class="mb-0">100% keamanan dan kenyamanan</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="featurs-item text-center rounded bg-light p-4">
-                            <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
-                                <i class="fas fa-exchange-alt fa-3x text-white"></i>
-                            </div>
-                            <div class="featurs-content text-center">
-                                <h5>Return</h5>
-                                <p class="mb-0">Pelayanan Retur</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="featurs-item text-center rounded bg-light p-4">
-                            <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
-                                <i class="fa fa-phone-alt fa-3x text-white"></i>
-                            </div>
-                            <div class="featurs-content text-center">
-                                <h5>15/7 Support</h5>
-                                <p class="mb-0">Pelayanan setiap waktu</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Featurs Start -->
-        <div class="container-fluid service py-5">
-            <div class="container py-5">
-                <div class="row g-4 justify-content-center">
-                    <div class="col-md-6 col-lg-4">
-                        <a href="#">
-                            <div class="service-item bg-secondary rounded border border-secondary">
-                                <img src="img/tempat2.jpg" class="img-fluid rounded-top w-100" alt="">
-                                <div class="px-4 rounded-bottom">
-                                    <div class="service-content bg-primary text-center p-4 rounded">
-                                        <h5 class="text-white">Kasir Place</h5>
-                                        <h3 class="mb-0">Harga Selalu Terjangkau</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <a href="#">
-                            <div class="service-item bg-dark rounded border border-dark">
-                                <img src="img/pototoko.jpg" class="img-fluid rounded-top w-100" alt="">
-                                <div class="px-4 rounded-bottom">
-                                    <div class="service-content bg-light text-center p-4 rounded">
-                                        <h5 class="text-primary">Toko Subur Sembako</h5>
-                                        <h3 class="mb-0">Harga Yang Murah</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <a href="#">
-                            <div class="service-item bg-primary rounded border border-primary">
-                                <img src="img/sachet.jpg" class="img-fluid rounded-top w-100" alt="">
-                                <div class="px-4 rounded-bottom">
-                                    <div class="service-content bg-secondary text-center p-4 rounded">
-                                        <h5 class="text-white">Snack Place</h5>
-                                        <h5 class="mb-0">Tempat Yang Selalu nyaman dan aman</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Featurs End -->
-
-
-        <!-- Vesitable Shop Start-->
-        <div class="container-fluid vesitable py-5">
-            <div class="container py-5">
-                <h1 class="mb-0"><b>Barang Yang Kami Jual</b></h1>
-                <div class="owl-carousel vegetable-carousel justify-content-center">
-                    <div class="border border-primary rounded position-relative vesitable-item">
-                        <div class="vesitable-img">
-                            <img src="img/cosmetic1.jpg" class="img-fluid w-100 rounded-top" alt="">
-                        </div>
-                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Cosmetic</div>
-                        <div class="p-4 rounded-bottom">
-                            <h4>Produk Kecantikan Dan Kesehatan</h4>
-                            <p> <b>"Cantik dari luar, sehat dari dalam!"</b> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;berbagai produk kecantikan dan kesehatan untuk memenuhi kebutuhan anda</p>
-                            <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0"> Per Renteng</p>
-                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="border border-primary rounded position-relative vesitable-item">
-                        <div class="vesitable-img">
-                            <img src="img/makanan.jpg" class="img-fluid w-100 rounded-top" alt="">
-                        </div>
-                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Foods</div>
-                        <div class="p-4 rounded-bottom">
-                            <h4>Snack</h4>
-                            <p><b>"Snack Anti Mainstream, Buat yang Mau Beda!"</b>. &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Berbagai Snack Makanan Ringan Yang Bisa Menunda Lapar kamu!  </p>
-                            <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">Per Renteng</p>
-                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="border border-primary rounded position-relative vesitable-item">
-                        <div class="vesitable-img">
-                            <img src="img/biskuit.jpg" class="img-fluid w-100 rounded-top bg-light" alt="">
-                        </div>
-                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Foods</div>
-                        <div class="p-4 rounded-bottom">
-                            <h4>Biscuit</h4>
-                            <p><b>"Nikmati Sensasi Biskuit Terbaik di Setiap Kemasan!"</b>. &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;jajanan renyah yang terbuat dari tepung terigu dan cocok di tambahkan dengan makanan minuman lain </p>
-                            <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">Per Item</p>
-                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="border border-primary rounded position-relative vesitable-item">
-                        <div class="vesitable-img">
-                            <img src="img/dapur.jpg" class="img-fluid w-100 rounded-top" alt="">
-                        </div>
-                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">herbs and spices</div>
-                        <div class="p-4 rounded-bottom">
-                            <h4>Bumbu Dapur</h4>
-                            <p><b>"Bumbu Dapur Berkualitas, Cita Rasa Tak Tergantikan!"</b>. &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; bumbu yang umumnya berasal dari tanaman beraroma yang ditambahkan pada masakan yang bertujuan untuk menyedapkan makanan. </p>
-                            <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">Per Renteng</p>
-                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="border border-primary rounded position-relative vesitable-item">
-                        <div class="vesitable-img">
-                            <img src="img/es.jpg" class="img-fluid w-100 rounded-top" alt="">
-                        </div>
-                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Drinks</div>
-                        <div class="p-4 rounded-bottom">
-                            <h4>Sachetan</h4>
-                            <p><b> "Kemasan Praktis, Rasa Optimal"</b>. &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Sebuah kemasan yang kecil dan praktis yang mudah dengan kualitas yang enak  </p>
-                            <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">Per Renteng</p>
-                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="border border-primary rounded position-relative vesitable-item">
-                        <div class="vesitable-img">
-                            <img src="img/bahanmandi.jpg" class="img-fluid w-100 rounded-top" alt="">
-                        </div>
-                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">
-                            toiletries</div>
-                        <div class="p-4 rounded-bottom">
-                            <h4>Perlengkapan mandi</h4>
-                            <p><b> "Pagi yang segar dimulai dengan mandi, menjaga kebersihan tubuh dan memberikan kesegaran untuk memulai hari."</b>. &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; membantu membersihkan tubuh dari kotoran, minyak, dan bakteri, menjaga kebersihan dan kesehatan kulit  </p>
-                            <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">Per Item/Renteng</p>
-                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="border border-primary rounded position-relative vesitable-item">
-                        <div class="vesitable-img">
-                            <img src="img/mie.jpg" class="img-fluid w-100 rounded-top" alt="">
-                        </div>
-                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Foods</div>
-                        <div class="p-4 rounded-bottom">
-                            <h4>Aneka Mie</h4>
-                            <p><b>"Penunda lapar yang paling enak di makan setiap saat"</b>. &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;sahabat setia di kala lapar, menghadirkan kehangatan dan kelezatan dalam setiap gigitannya  </p>
-                            <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">Per Item</p>
-                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="border border-primary rounded position-relative vesitable-item">
-                        <div class="vesitable-img">
-                            <img src="img/drink.jpg" class="img-fluid w-100 rounded-top" alt="">
-                        </div>
-                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Drinks</div>
-                        <div class="p-4 rounded-bottom">
-                            <h4>Berbagai Minuman </h4>
-                            <p><b>"Sajian mimuman yang menyegarkan, membuatmu terhanyut dalam kenikmatan setiap tetesnya."</b>. &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Sahabat setia ketika hausss!</p>
-                            <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">Per Item</p>
-                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Vesitable Shop End -->
-
-
-        <!-- Banner Section Start-->
-        <div class="container-fluid banner bg-secondary my-5">
-            <div class="container py-5">
-                <div class="row g-4 align-items-center">
-                    <div class="col-lg-6">
-                        <div class="py-4">
-                            <h1 class="display-3 text-white">Di toko subur</h1>
-                            <p class="fw-normal display-6 text-dark mb-4">Barang selalu terjaga kebersihannya setiap hari</p>
-                            <p class="mb-4 text-dark">Demi kenyamanan costumer barang selalu di check kebersiannya setiap hari agar selalu aman dan nyaman sehingga dapat di konsumsi dengan sehat!</p>
-                            <a href="contact.html" class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5">Ayo Beli!</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="position-relative">
-                            <img src="img/grocery.png" class="img-fluid w-100 rounded" alt="" >
-                            
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Banner Section End -->
-
-        <!-- Fact Start -->
-        <div class="container-fluid py-5">
-            <div class="container">
-                <div class="bg-light p-5 rounded">
-                    <div class="row g-4 justify-content-center">
-                        <div class="col-md-6 col-lg-6 col-xl-3">
-                            <div class="counter bg-white rounded p-5">
-                                <i class="fa fa-users text-secondary"></i>
-                                <h4>Pelanggan puas</h4>
-                                <h1>90%</h1>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6 col-xl-3">
-                            <div class="counter bg-white rounded p-5">
-                                <i class="fa fa-users text-secondary"></i>
-                                <h4>Kualitas pelayanan</h4>
-                                <h1>97%</h1>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6 col-xl-3">
-                            <div class="counter bg-white rounded p-5">
-                                <i class="fa fa-users text-secondary"></i>
-                                <h4>kualitas Kenyamanan</h4>
-                                <h1>95%</h1>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6 col-xl-3">
-                            <div class="counter bg-white rounded p-5">
-                                <i class="fa fa-users text-secondary"></i>
-                                <h4>Produk tersedia</h4>
-                                <h1>97%</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Fact Start -->
-
-
-        <!-- Rating Start -->
-        <div class="testimonial-header text-center">
-            <h4 class="text-primary">Rating Toko Kami</h4>
-            <h1 class="display-5 mb-5 text-dark">Agar Bisa Terus Berkembang!</h1>
-        </div>
-        <style>
-            /* CSS untuk styling bintang */
-           .rating {
-                font-size: 24px;
-                color: #ccc;
-                text-align: center; /* Tambahkan ini untuk membuat rating terletak di tengah */
-            }
-            
-           .rating span {
-                cursor: pointer;
-                margin: 0 5px; /* Tambahkan ini untuk membuat jarak antar bintang */
-            }
-            
-           .rating span:hover {
-                color: #ffd700;
-            }
-            
-           .rating span.active {
-                color: #ffd700;
-            }
-            
-            /* CSS untuk styling rating summary */
-           .rating-summary {
-                margin-top: 20px;
-                font-size: 18px;
-                color: #333;
-                text-align: center; /* Tambahkan ini untuk membuat rating summary terletak di tengah */
-            }
-            
-           .rating-summary span {
-                font-weight: bold;
-            }
-            
-            /* Tambahkan CSS untuk membuat background dan border */
-            body {
-                background-color: #f5f5f5; /* Tambahkan background color */
-            }
-            
-           .rating-container {
-                width: 50%; /* Tambahkan ini untuk membuat container rating selebar 50% */
-                margin: 40px auto; /* Tambahkan ini untuk membuat container rating terletak di tengah */
-                background-color: #fff; /* Tambahkan background color */
-                padding: 20px; /* Tambahkan padding */
-                border: 1px solid #ddd; /* Tambahkan border */
-                border-radius: 10px; /* Tambahkan border radius */
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Tambahkan box shadow */
-            }
-        </style>
         
-        <body>
-            <div class="rating-container">
-                <h2><b><center>Rating Toko Ini</center></b></h2>
-                <div class="rating">
-                    <span class="star" data-value="1">&#x2605;</span>
-                    <span class="star" data-value="2">&#x2605;</span>
-                    <span class="star" data-value="3">&#x2605;</span>
-                    <span class="star" data-value="4">&#x2605;</span>
-                    <span class="star" data-value="5">&#x2605;</span>
-                </div>
-                
-                <div class="rating-summary">
-                    <span id="average-rating"><b>0</span>/5 bintang (<span id="total-ratings">0</span> ulasan)
-                </b></div>
-                
-                <script>
-                    // JavaScript untuk menghandle klik pada bintang
-                    const ratingStars = document.querySelectorAll('.star');
-                    let ratingValue = 0;
-                    let totalRatings = 0;
-                    let averageRating = 0;
-                    let hasRated = false; // Flag untuk mengetahui apakah user telah rating
-                    
-                    ratingStars.forEach((star, index) => {
-                        star.addEventListener('click', () => {
-                            if (!hasRated) {
-                                ratingValue = index + 1;
-                                updateRating();
-                                hasRated = true; // Set flag to true after rating
-                            } else {
-                                alert("Anda telah memberikan rating sebelumnya!");
-                            }
-                        });
-                    });
-                    
-                    function updateRating() {
-                        ratingStars.forEach((star, index) => {
-                            if (index < ratingValue) {
-                                star.classList.add('active');
-                            } else {
-                                star.classList.remove('active');
-                            }
-                        });
-                        
-                        // Update total ratings dan average rating
-                        totalRatings++;
-                        averageRating = (averageRating * (totalRatings - 1) + ratingValue) / totalRatings;
-                        
-                        // Tampilkan rating summary
-                        document.getElementById('average-rating').innerHTML = averageRating.toFixed(1);
-                        document.getElementById('total-ratings').innerHTML = totalRatings;
-                    }
-                </script>
-            </div>
-        </body>
-       
-       <center> <a href="https://www.google.com/search?q=ulasan+toko+subur+sembako+kabupaten+cirebon&sca_esv=a22b124cb26f8e73&sca_upv=1&authuser=9&sxsrf=ADLYWIKvfmKvk11HOLjIvHMBEs9P4OKAww%3A1718152283745&ei=W-xoZqaWLcGt4-EPgvaekAw&si=ACC90nwjPmqJHrCEt6ewASzksVFQDX8zco_7MgBaIawvaF4-7i6luOJ7PomjtIC6Ns8GtNhdvNECbVwKNmO5c0hTWYXkrpqP1XWCxkXFMPO6RmuabBo49uqQpnDFJE8J2CCNyZN4TgtSBB7F8SjCVJckEGLQPcYAmAP_a-JMD2z74xjCO-RuMM8%3D&ictx=1&ved=2ahUKEwiqpdWf6NSGAxUfzzgGHYiBFgsQyNoBKAF6BAg1EAM" class="btn btn-success py-2 px-4 rounded-pill text-white"><b>Rating Kami Di Google Maps!</b></a> </center>
-       <br>
-       <h4><center><b>Tolong Beri Kami Ulasan Terbaik Kalian ya! :D</b></center></h4>
-       <br>
-        <div class="container-fluid testimonial py-5">
+        <!-- Single Page Header start -->
+<div class="container-fluid page-header py-5" style="background-color: #88ff00;">
+    <div class="container">
+    <h1 class="text-white display-6" style="font-weight: bold; font-size: 48px; margin-bottom: 20px;"><center>Information Toko Subur Sembako</center></h1>
+    <ol class="breadcrumb justify-content-center mb-0" style="background-color: transparent; padding: 0; margin: 0;">
+        <li class="breadcrumb-item"><a href="index.html" style="color: #fff; text-decoration: none;">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page" style="color: #fff;">Contact</li>
+    </ol>
+    <div class="header-content">
+        &nbsp;
+        <p style="font-size: 18px; margin-bottom: 20px; color: #fff; text-align: center;"> Toko Subur Sembako adalah pusat perbelanjaan kebutuhan sehari-hari yang menawarkan berbagai macam produk dengan harga grosir. Kami menyediakan beragam pilihan makanan, minuman, kosmetik, serta produk kebersihan dan kebutuhan lainnya untuk memenuhi segala keperluan Anda. Kami berkomitmen untuk memberikan harga yang terbaik dan kualiti produk yang tinggi kepada pelanggan kami. </p>
+        <button class="btn btn-light" style="background-color: #fff; color: #333; border: none; padding: 10px 20px; font-size: 18px; cursor: pointer;" onclick="window.scrollTo(0, 1150);">Pelajari Selengkapnya</button>
+        
+    </div>
+    </div>
+    </div>
+    <!-- Single Page Header End -->
+
+
+        <!-- Contact Start -->
+        <div class="container-fluid contact py-5">
             <div class="container py-5">
-                <div class="owl-carousel testimonial-carousel">
-                    <div class="testimonial-item img-border-radius bg-light rounded p-4">
-                        <div class="position-relative">
-                            <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
-                            <div class="mb-4 pb-4 border-bottom border-secondary">
-                                <p class="mb-0"> <b>Keren sih pelayanannya ramah dan sangat nyaman! semangat dan tingkatkan terus untuk toko subur sembako!</b></p>
-                            </div>
-                            <div class="d-flex align-items-center flex-nowrap">
-                                <div class="bg-secondary rounded">
-                                    <img src="img/ppkosong.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
-                                </div>
-                                <div class="ms-4 d-block">
-                                    <h4 class="text-dark">M**** A***</h4>
-                                    <p class="m-0 pb-3">Pelanggan</p>
-                                    <div class="d-flex pe-5">
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
+                <div class="p-5 bg-light rounded">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="text-center mx-auto" style="max-width: 700px;">
+                                <h1 class="text-primary">Full Information</h1>
+                                <p class="mb-4"><b>Alamat:</b>&nbsp;Jl. Keramat Talun, RT.02/RW.03, Cirebon Girang, Kec. Talun, Kabupaten Cirebon, Jawa Barat 45171<br>&nbsp;<b>No Telepon:</b> 0853-1644-0018<br><b>Jam:</b> 
+                                    Buka Pukul 07.30<br>&emsp;&emsp;&ensp;Tutup pukul 21.00<br>
+                                    <a href="https://www.google.com/maps/dir//TOKO+SUBUR+SEMBAKO,+Jl.+Keramat+Talun,+RT.02%2FRW.03,+Cirebon+Girang,+Kec.+Talun,+Kabupaten+Cirebon,+Jawa+Barat+45171/@-6.7708559,108.5064101,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x2e6f1fd70bda306b:0x62cb73170eab3c74!2m2!1d108.5064101!2d-6.7708559?entry=ttu">&emsp;&emsp;&ensp;<B>Clik For Route Toko Subur Form Your Home</B></a>.</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="testimonial-item img-border-radius bg-light rounded p-4">
-                        <div class="position-relative">
-                            <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
-                            <div class="mb-4 pb-4 border-bottom border-secondary">
-                                <p class="mb-0"><b>Sangat Lengkap dan murah&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</b></p>
-                            </div>
-                            <div class="d-flex align-items-center flex-nowrap">
-                                <div class="bg-secondary rounded">
-                                    <img src="img/ppkosong.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
-                                </div>
-                                <div class="ms-4 d-block">
-                                    <h4 class="text-dark">S*****</h4>
-                                    <p class="m-0 pb-3">Pelanggan</p>
-                                    <div class="d-flex pe-5">
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                    </div>
-                                </div>
+                        <div class="col-lg-12">
+                            <div class="h-100 rounded">
+                            <iframe class="rounded w-100" 
+                            style="height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.419944115144!2d108.5064101!3d-6.7708559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f1fd70bda306b:0x62cb73170eab3c74!2sTOKO+SUBUR+SEMBAKO!5e0!3m2!1sen!2sbd!4v1694259649153!5m2!1sen!2sbd" 
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
-                    </div>
-                    <div class="testimonial-item img-border-radius bg-light rounded p-4">
-                        <div class="position-relative">
-                            <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
-                            <div class="mb-4 pb-4 border-bottom border-secondary">
-                                <p class="mb-0"><b>Rekomended banget buat yang mau belanja.. harga sangat murah dan pelayanan yang sangat baik!</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
-                            </div>
-                            <div class="d-flex align-items-center flex-nowrap">
-                                <div class="bg-secondary rounded">
-                                    <img src="img/ppkosong.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
+                        <div class="col-lg-7">
+                            <form action="send_email.js" method="post" class="" id="myForm">
+                              <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Your Name" name="name" required>
+                              <input type="email" class="w-100 form-control border-0 py-3 mb-4" placeholder="Enter Your Email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                              <textarea class="w-100 form-control border-0 mb-4" rows="5" cols="10" placeholder="Your Message" name="message" required></textarea>
+                              <button class="w-100 btn form-control border-secondary py-3 bg-white text-primary" type="submit">Submit</button>
+                            </form>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="d-flex p-4 rounded mb-4 bg-white">
+                                <i class="fas fa-map-marker-alt fa-2x text-primary me-4"></i>
+                                <div>
+                                    <h4>Alamat</h4>
+                                    <p class="mb-2"><a href="https://www.google.com/maps/dir//TOKO+SUBUR+SEMBAKO,+Jl.+Keramat+Talun,+RT.02%2FRW.03,+Cirebon+Girang,+Kec.+Talun,+Kabupaten+Cirebon,+Jawa+Barat+45171/@-6.7708559,108.5064101,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x2e6f1fd70bda306b:0x62cb73170eab3c74!2m2!1d108.5064101!2d-6.7708559?entry=ttu" target="_blank">Jl.Keramat Talun, Cirebon Girang, Kec.Talun,Kabupaten Cirebon</a></p>
                                 </div>
-                                <div class="ms-4 d-block">
-                                    <h4 class="text-dark">A*****</h4>
-                                    <p class="m-0 pb-3">Pelanggan</p>
-                                    <div class="d-flex pe-5">
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                    </div>
+                            </div>
+                            <div class="d-flex p-4 rounded mb-4 bg-white">
+                                <i class="fas fa-envelope fa-2x text-primary me-4"></i>
+                                <div>
+                                    <h4>Mail</h4>
+                                    <p class="mb-2"><a href="mailto:dimashafizd67@gmail.com">dimashafizd67@gmail.com</a></p>
+                                </div>
+                            </div>
+                            <div class="d-flex p-4 rounded bg-white">
+                                <i class="fa fa-phone-alt fa-2x text-primary me-4"></i>
+                                <div>
+                                    <h4>Telephone</h4>
+                                    <p class="mb-2"><a href="https://wa.me/+6285316440018" target="_blank">+62 853 1644 00181</a></p>
                                 </div>
                             </div>
                         </div>
@@ -632,8 +173,8 @@
                 </div>
             </div>
         </div>
-        <!-- Rating End -->
- 
+        <!-- Contact End -->
+
 
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
@@ -648,7 +189,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="position-relative mx-auto">
-                                    <form action="send-whatsapp.php" method="post">
+                                    <form action="send-whatsapp.js" method="post">
                                     <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="text" placeholder="Your Message" name="message">
                                     <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Send</button>
                                     </form>
@@ -746,8 +287,6 @@
             </div>
         </div>
         <!-- Copyright End -->
-
-
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
