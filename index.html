@@ -110,12 +110,22 @@
                         <p class="text-center">Pusat perbelanjaan kebutuhan sehari-hari yang menawarkan berbagai macam produk. Kami menyediakan beragam pilihan makanan, minuman, kosmetik, serta produk kebersihan dan kebutuhan lainnya untuk memenuhi segala keperluan Anda.</p>
                         <h4 class="mb-3 text-secondary text-center">&emsp;100% Pelayanan Terbaik Untuk Anda</h4>
                         <h2 class="mb-3 text-primary text-center">&emsp; lengkap hemat dan berkualitas.</h2>
-                                                 <div class="position-relative mx-auto">
-
-                                    <form action="send-whatsapp.js" method="post">
-
-                                    <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="text" placeholder="Message For This Shop" name="message">
-                                    <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Send</button>
+                        <div class="position-relative mx-auto">
+                            <form>
+                              <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="text" placeholder="Message For This Shop" id="message">
+                              <button type="button" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;" onclick="sendMessage()">Send</button>
+                            </form>
+                          </div>
+                          
+                          <script>
+                            const whatsappNumber = '+6285316440018'; // Replace with your WhatsApp phone number
+                          
+                            function sendMessage() {
+                              const message = document.getElementById('message').value;
+                              const apiUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(message)}`;
+                              window.open(apiUrl, '_blank');
+                            }
+                          </script>
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-5 mx-auto">
@@ -649,9 +659,21 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="position-relative mx-auto">
-                                    <form action="send-whatsapp.js" method="post">
-                                    <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="text" placeholder="Your Message" name="message">
-                                    <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Send</button>
+                                <form>
+                                  <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="text" placeholder="Message For This Shop" id="message">
+                                  <button type="button" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;" onclick="sendMessage()">Send</button>
+                                </form>
+                              </div>
+                              
+                              <script>
+                                const whatsappNumber = '+6285316440018'; // Replace with your WhatsApp phone number
+                              
+                                function sendMessage() {
+                                  const message = document.getElementById('message').value;
+                                  const apiUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(message)}`;
+                                  window.open(apiUrl, '_blank');
+                                }
+                              </script>
                                     </form>
                                 </div>
                         </div>
